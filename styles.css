@@ -1,0 +1,141 @@
+html {
+  font-size: Max(1vw, 16px);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body>* {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul > li {
+  line-height: 1.5;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+nav ul {
+  display: flex;
+  width: Min(500px, 100vw);
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-style: italic;
+}
+
+header main.hero {
+  text-align: center;
+  padding: 3rem;
+  width: 100%;
+  background: #cfe2fb;
+  ;
+}
+
+body>main {
+  row-gap: 80px;
+}
+
+body>main>section {
+  padding: 3rem .5rem;
+  width: 100%;
+}
+
+section.offerings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: Max(40px, 5vw) Min(40px, 5vw);
+  max-width: 1200px;
+}
+
+.offerings article, .offerings aside {
+  max-width: 50%;
+  align-self: center;
+}
+
+.offerings article h3 {
+  margin-top: 0;
+}
+
+.offerings img {
+  width: 100%;
+}
+
+.offerings h2 {
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.employees {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  background-color: aliceblue;
+}
+
+.employees h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.experts-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.employee-card {
+  display: flex;
+  max-width: Min(400px, 90vw);
+  padding: 15px 20px;
+  background-color: #cfe2fb;
+  align-items: center;
+  gap: 15px;
+  border-radius: 6px;
+}
+
+.employee-card article {
+  flex: 0 1 50%;
+}
+
+.employee-card aside {
+  flex: 0 1 50%;
+}
+
+.employee-card img {
+  width: 100%;
+  border: 2px solid grey;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: .2rem;
+}
+
+footer h2 {
+  margin-bottom: 0;
+}
